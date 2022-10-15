@@ -1,55 +1,49 @@
+
 body {
-    padding-top: 25px;
+    padding-top: 1%;
     background-color: #654321;
     }
-
-    main {
-        background-color: #654321;
-        width: 75%;
-    }
     
-    aside {
-        float: right;
-        padding-right: 35px;
-        width: 23%;
-        color: #FFD700;
+    main {
+      background-color: #654321;
+      width: 100%;
     }
 
-    .keyIcon {
-        float: left;
-        border: #EAC117 solid 3px;
-        padding: 8px;
-        color: red;
+.keyIcon {
+      float: left;
+      border: #EAC117 solid 1%;
+      padding: 1%;
+      color: red;
     }
     @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
+/*
+    * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+*/
 body {
   font-family: "Poppins", sans-serif;
 }
 
 .container {
-  max-width: 1050px;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
 .navbar {
-  width: 100%;
+  min-width: 100%;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-  text-align: center;
+ 
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 62px;
+  height: 15%;
   text-align: center;
 
 }
@@ -144,7 +138,7 @@ body {
 
 #keyWestTitle {
   margin: auto;
-  padding-top: 190px;
+  padding-top: 17%;
   text-align: center;
   color:crimson;
 }
@@ -184,40 +178,83 @@ body {
 }
 
 hr {
+  background-color: #FFD700;
     color: #FFD700;
-    height: 6px;
+    height: 5%;
 }
 
 .fa-3x {
     color:#FFD700;
 }
 
-.leftSocials {
-    float: right;
-    padding-right: 25px;
+.left{
+  text-align: right;
+/*    padding-right: 25px; */
 }
 
-.divOneIndex {
+.right{
+  text-align: right;
+/*    padding-right: 25px; */
+}
+
+.indexFirstDiv {
     background-image: url("keywest1.jpg");
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: center;
-    padding: 35px;
+    padding: 0%;
     min-height: 450px;
 }
+
+
+.indexSmallImaged{
+  width: 50%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.indexThirdDiv {
+  background-image: url("keyWest4Minimized.jpg");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 600px;
+  float: right;
+  min-width: 1000px;
+}
+
 
 .innerText {
   text-align: center;
   color:crimson;
-  padding: 135px 170px 135px 170px;
-  min-height: 450px;
+ /* padding: 135px 170px 135px 170px;
+ */ min-height: 450px;
 }
 
-footer {
-    padding: 15px;
+.footer {
+  padding-top: 5%;
 }
 
 .intro {
-    padding: 20px;
+    padding: 5%;
     color: red;
+}
+.introText {
+  margin-left: auto;
+}
+
+.floatRight {
+  width: 20%;
+  float: right;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.fitImage {
+  width: 40%;
+  height: auto;
 }
