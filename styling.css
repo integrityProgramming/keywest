@@ -2,6 +2,7 @@
 body {
     padding-top: 1%;
     background-color: #654321;
+    font-family: "Poppins", sans-serif;
     }
     
     main {
@@ -16,17 +17,12 @@ body {
       color: red;
     }
     @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-/*
     * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-*/
-body {
-  font-family: "Poppins", sans-serif;
-}
+
 
 .container {
   width: 100%;
@@ -48,6 +44,9 @@ body {
 
 }
 
+.menu-items{
+  width: fit-content;
+}
 .navbar .menu-items {
   display: flex;
 }
@@ -194,7 +193,7 @@ hr {
 
 .right{
   text-align: right;
-/*    padding-right: 25px; */
+/aaa*    padding-right: 25px; */
 }
 
 .indexFirstDiv {
@@ -257,4 +256,61 @@ hr {
 .fitImage {
   width: 40%;
   height: auto;
+}
+
+
+.dropbtn {
+  text-decoration: none;
+  color: #FFD700;
+  background-color: #654321;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #654321;
+  color:#EAC117;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color: #EAC117;
+  color:#654321;
+}
+
+.images {
+  width: 250px;
+  height: auto;
+}
+td{
+  padding-bottom: 20px;
+}
+
+figcaption {
+  color: #EAC117;
+  text-align: center;
 }
