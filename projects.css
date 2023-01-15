@@ -9,7 +9,8 @@ body {
 .column {
 float: left;
 width: 25%;
-padding: 10px;
+padding: 2px;
+
 }
 
 /* Style the images inside the grid */
@@ -60,3 +61,8 @@ margin-right: auto;
 margin-left: auto;
 display: block;
 }
+
+img {
+    width: 100%; /* takes the 100 % width of its container (.box div)*/
+    height: 100%; /* takes the 100 % height of its container (.box div)*/
+  }

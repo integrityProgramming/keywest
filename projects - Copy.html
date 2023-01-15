@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyera's projects</title>
+    <script src="https://kit.fontawesome.com/b9bde7b7a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <script src="skript.js"></script>
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    }
+
+    .column img:hover {
+    opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* The expanding image container */
+    .container {
+    position: relative;
+    display: none;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    }
+
+    #expandedImg{
+        width:33%; 
+        margin-right: auto; 
+        margin-left: auto;
+        display: block;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">    
+        <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html"class="active">Projects</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+   
+              <!--<i class="fa-solid fa-key 3x"></i>-->
+        </nav> 
+    <div id="container">
+        <main>
+            <!-- The grid: four columns -->  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+        <img src="keywest20b.jpg" alt="Photo by: Unknown" style="width:100%" class="images" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="keywest21b.jpg" alt="Photo by: Unknown" style="width:100%" class="images" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="keywest2.jpg" alt="Photo by: Leon Peatry" style="width:100%" class="images" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="keywest12.jpg" alt="Photo by: 4evermore Photos" style="width:100%" class="images" onclick="myFunction(this);">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+        <img src="keywest13.jpg"  alt="Photo by: Clarence Megginson" class="images" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="keywest14.jpg" class="images" alt="Photo by: Clarence Megginson" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="keywest15.jpg" alt="Photo by: Xavier Leed" class="images" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="keywest16.jpg" class="images" alt="Photo by: Moguel" onclick="myFunction(this);">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+        <img src="keywest17.jpg" class="images" alt="Photo by: Xavier Leed" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="keywest19.jpg" class="images" alt="Photo by: Anthony Greer" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="keywest8.jpg" class="images" alt="Photo by: Unknown" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="keywest10.jpg" class="images" alt="Photo by: kwabena Kumi" onclick="myFunction(this);">
+    </div>
+  </div>
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+</main>
+    </div>
+    <footer id="footer">
+        <a href="http://"><i class="fa-brands fa-square-twitter center"></i></a>
+        <a href="http://"><i class="fa-brands fa-square-instagram center"></i></a>
+        <a href="http://"><i class="fa-brands fa-square-facebook center"></i></a>
+
+    </footer>
+    <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+        
+</body>
+</html>
